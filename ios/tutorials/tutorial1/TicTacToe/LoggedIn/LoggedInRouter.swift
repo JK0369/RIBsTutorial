@@ -13,15 +13,11 @@ protocol LoggedInInteractable: Interactable {
     var listener: LoggedInListener? { get set }
 }
 
-protocol LoggedInViewControllable: ViewControllable {
-    // TODO: Declare methods the router invokes to manipulate the view hierarchy.
-}
-
-final class LoggedInRouter: ViewableRouter<LoggedInInteractable, LoggedInViewControllable>, LoggedInRouting {
+final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
 
     // TODO: Constructor inject child builder protocols to allow building children.
-    override init(interactor: LoggedInInteractable, viewController: LoggedInViewControllable) {
-        super.init(interactor: interactor, viewController: viewController)
+    override init(interactor: LoggedInInteractable) {
+        super.init(interactor: interactor)
         interactor.router = self
     }
 }

@@ -15,7 +15,6 @@
 		E085E6FA262965E700E270D9 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E085E6F5262965E700E270D9 /* LoggedOutBuilder.swift */; };
 		E085E6FB262965E700E270D9 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E085E6F6262965E700E270D9 /* LoggedOutInteractor.swift */; };
 		E085E7042629725100E270D9 /* LoggedInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E085E7002629725100E270D9 /* LoggedInRouter.swift */; };
-		E085E7052629725100E270D9 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E085E7012629725100E270D9 /* LoggedInViewController.swift */; };
 		E085E7062629725100E270D9 /* LoggedInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E085E7022629725100E270D9 /* LoggedInBuilder.swift */; };
 		E085E7072629725100E270D9 /* LoggedInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E085E7032629725100E270D9 /* LoggedInInteractor.swift */; };
 		E9CB1D521F97303800D84847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB1D351F972FD500D84847 /* AppDelegate.swift */; };
@@ -38,7 +37,6 @@
 		E085E6F5262965E700E270D9 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
 		E085E6F6262965E700E270D9 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
 		E085E7002629725100E270D9 /* LoggedInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInRouter.swift; sourceTree = "<group>"; };
-		E085E7012629725100E270D9 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		E085E7022629725100E270D9 /* LoggedInBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInBuilder.swift; sourceTree = "<group>"; };
 		E085E7032629725100E270D9 /* LoggedInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInInteractor.swift; sourceTree = "<group>"; };
 		E9894B4A1F972CC500688FCB /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				E085E7002629725100E270D9 /* LoggedInRouter.swift */,
-				E085E7012629725100E270D9 /* LoggedInViewController.swift */,
 				E085E7022629725100E270D9 /* LoggedInBuilder.swift */,
 				E085E7032629725100E270D9 /* LoggedInInteractor.swift */,
 			);
@@ -285,7 +282,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E085E7062629725100E270D9 /* LoggedInBuilder.swift in Sources */,
-				E085E7052629725100E270D9 /* LoggedInViewController.swift in Sources */,
 				E9CB1D521F97303800D84847 /* AppDelegate.swift in Sources */,
 				E085E7042629725100E270D9 /* LoggedInRouter.swift in Sources */,
 				E085E6FA262965E700E270D9 /* LoggedOutBuilder.swift in Sources */,
@@ -423,6 +419,7 @@
 			baseConfigurationReference = 833B15CABE3CBE09720A0409 /* Pods-TicTacToe.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SS7U83UJNK;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -438,6 +435,7 @@
 			baseConfigurationReference = A791EBDAD202886E66137B9C /* Pods-TicTacToe.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SS7U83UJNK;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -9,30 +9,21 @@
 import RIBs
 import RxSwift
 
-protocol LoggedInRouting: ViewableRouting {
+protocol LoggedInRouting: Routing {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
-}
-
-protocol LoggedInPresentable: Presentable {
-    var listener: LoggedInPresentableListener? { get set }
-    // TODO: Declare methods the interactor can invoke the presenter to present data.
 }
 
 protocol LoggedInListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
 
-final class LoggedInInteractor: PresentableInteractor<LoggedInPresentable>, LoggedInInteractable, LoggedInPresentableListener {
+final class LoggedInInteractor: Interactor, LoggedInInteractable {
 
     weak var router: LoggedInRouting?
     weak var listener: LoggedInListener?
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
-    override init(presenter: LoggedInPresentable) {
-        super.init(presenter: presenter)
-        presenter.listener = self
-    }
 
     override func didBecomeActive() {
         super.didBecomeActive()
