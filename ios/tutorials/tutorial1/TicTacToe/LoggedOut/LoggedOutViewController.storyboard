@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKn-9P-Ny8">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Logged Out View Controller-->
+        <scene sceneID="GzV-lN-fg7">
+            <objects>
+                <viewController storyboardIdentifier="LoggedOutViewController" id="vKn-9P-Ny8" customClass="LoggedOutViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BNZ-bO-rhc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-lN-xzl">
+                                <rect key="frame" x="40" y="100" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wki-XG-X1G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etI-G7-WZY">
+                                <rect key="frame" x="40" y="160" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hWr-09-ziR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUS-zC-y0F">
+                                <rect key="frame" x="40" y="220" width="295" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="AGS-UC-TZg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HgA-Aw-ocO"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="etI-G7-WZY" firstAttribute="height" secondItem="5y9-lN-xzl" secondAttribute="height" id="0d6-ZQ-WJX"/>
+                            <constraint firstItem="mUS-zC-y0F" firstAttribute="top" secondItem="etI-G7-WZY" secondAttribute="bottom" constant="20" id="3xO-jh-ebJ"/>
+                            <constraint firstItem="mUS-zC-y0F" firstAttribute="trailing" secondItem="etI-G7-WZY" secondAttribute="trailing" id="6Ps-kd-Iqa"/>
+                            <constraint firstItem="etI-G7-WZY" firstAttribute="trailing" secondItem="5y9-lN-xzl" secondAttribute="trailing" id="6vL-f7-aS1"/>
+                            <constraint firstItem="5y9-lN-xzl" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" constant="40" id="AHv-gW-lqC"/>
+                            <constraint firstItem="etI-G7-WZY" firstAttribute="top" secondItem="5y9-lN-xzl" secondAttribute="bottom" constant="20" id="GDa-rb-7Mp"/>
+                            <constraint firstItem="etI-G7-WZY" firstAttribute="leading" secondItem="5y9-lN-xzl" secondAttribute="leading" id="axa-w4-990"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="5y9-lN-xzl" secondAttribute="trailing" constant="40" id="gSC-ub-Y6h"/>
+                            <constraint firstItem="mUS-zC-y0F" firstAttribute="leading" secondItem="etI-G7-WZY" secondAttribute="leading" id="oPL-Hp-QeC"/>
+                            <constraint firstItem="5y9-lN-xzl" firstAttribute="top" secondItem="HgA-Aw-ocO" secondAttribute="top" constant="100" id="qk0-Cf-Dgd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="player1Field" destination="5y9-lN-xzl" id="Vxf-c9-ugn"/>
+                        <outlet property="player2Field" destination="etI-G7-WZY" id="n24-Dt-yiP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0X-am-vwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="205"/>
+        </scene>
+    </scenes>
+</document>
